@@ -88,9 +88,9 @@
 /* ---------------------------------- */
 .ex-10-icon {
     font-size: 60px;
-    animation: icon-rotate 1s linear infinite;
+    animation: spin 1s linear infinite;
 }
-@keyframes icon-rotate {
+@keyframes spin {
     0% {
         transform: rotate(1turn);
     }
@@ -98,6 +98,23 @@
 /* ---------------------------------- */
 .ex-11-icon {
     font-size: 60px;
+    animation-duration: 2.5s;
+}
+.not-spin:hover {
+    animation-name: rotate-animation;
+}
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(310deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
 }
 /* ---------------------------------- */
 .ex-12-button, .ex-13-button {
@@ -120,6 +137,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    animation-duration: 3s;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -128,5 +146,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    animation-duration: 3s;
 }
+
 /* ---------------------------------- */
